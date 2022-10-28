@@ -1,0 +1,44 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+/*************
+Buttons / Links
+**************/
+
+.add-book-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--wht);
+  background-color: var(--org);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.add-book-btn:hover {
+  transform: scale(1.01);
+}
+
+/*************
+Typography
+**************/
+
+.add-book-heading {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/*************
+Layout
+**************/
+
+/*************
+Media Queries
+**************/

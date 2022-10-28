@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --wht: #f8f8f8;
+  --blk: #28282b;
+  --dblu: #082032;
+  --mblu: #2c394b;
+  --lblu: #334756;
+  --org: #ff4c29;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  color: var(--wht);
+  background-color: var(--dblu);
+  padding: 2rem;
+}
+
+/*************
+General Elements
+**************/
+
+input {
+  padding: 8px 12px;
+  margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+  color: var(--blk);
+}
+
+/*************
+Images
+**************/
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/*************
+Buttons / Links
+**************/
+
+a {
+  text-decoration: none;
+  color: var(--wht);
+  font-weight: 700;
+}
+
+/*************
+Typography
+**************/
+
+/*************
+Layout
+**************/
+
+/*************
+Media Queries
+**************/

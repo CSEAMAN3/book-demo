@@ -1,0 +1,96 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+.book-img {
+  width: 60%;
+  border-radius: 4px;
+}
+
+/*************
+Buttons / Links
+**************/
+
+.book-title-link {
+  text-align: center;
+}
+
+.book-title-link:hover {
+  color: var(--org);
+}
+
+.delete-book-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border: 1px solid var(--wht);
+  border-radius: 50%;
+  color: var(--wht);
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.delete-book-btn:hover {
+  color: var(--org);
+  border-color: var(--org);
+}
+
+/*************
+Typography
+**************/
+
+.page-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.book-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-desc {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/*************
+Layout
+**************/
+
+.book {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mblu);
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.book-info-container {
+  margin-bottom: 1rem;
+}
+
+.book-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.additional-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*************
+Media Queries
+**************/
