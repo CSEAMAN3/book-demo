@@ -94,3 +94,9 @@ Layout
 /*************
 Media Queries
 **************/
+
+@media (min-width: 600px) {
+  .book {
+    width: 48%;
+  }
+}

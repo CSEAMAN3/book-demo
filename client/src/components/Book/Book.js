@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default function Book({ books, deleteBook }) {
   return (
     <>
-      <h2 className="page-heading">Chris fav books</h2>
       {books.map((bookObj, idx) => {
         return (
           <div className="book" key={idx}>

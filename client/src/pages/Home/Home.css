@@ -1,0 +1,38 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+/*************
+Buttons / Links
+**************/
+
+/*************
+Typography
+**************/
+
+/*************
+Layout
+**************/
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 600px) {
+  .books-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

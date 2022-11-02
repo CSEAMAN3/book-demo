@@ -41,10 +41,12 @@ function App() {
     //reset the input fields
     setCreateForm({
       title: "",
+      author: "",
       description: "",
       year: "",
+      isbn: "",
     });
-    // add our new bookto the page
+    // add our new book to the page
     setBooks([...books, res.data]);
   };
 
