@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./BookDetails.css";
+import { API_URL } from "../../api";
 
 export default function BookDetails() {
   const [book, setbook] = useState({});
@@ -37,14 +38,14 @@ export default function BookDetails() {
       }
     }
 
-    const API = `http://localhost:8080/books/${id}`;
+    const API = `${API_URL}/books/${id}`;
     const res = await axios.put(API, bodyToSend);
     console.log(res);
     getBookDetails();
   };
 
   const getBookDetails = async () => {
-    const API = `http://localhost:8080/books/${id}`;
+    const API = `${API_URL}/books/${id}`;
     console.log(API);
     const res = await axios.get(API);
     setbook(res.data[0]);

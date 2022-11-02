@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import BookDetails from "./pages/BookDetails/BookDetails";
+import { API_URL } from "./api";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -28,7 +29,7 @@ function App() {
 
   //function to get all books
   const getAllBooks = async () => {
-    const API = `http://localhost:8080/books`;
+    const API = `${API_URL}/books`;
     const res = await axios.get(API);
     setBooks(res.data);
   };
@@ -36,7 +37,7 @@ function App() {
   //function to create a new book
   const createNewBook = async (event) => {
     event.preventDefault();
-    const API = `http://localhost:8080/books`;
+    const API = `${API_URL}/books`;
     const res = await axios.post(API, createForm);
     //reset the input fields
     setCreateForm({
@@ -59,7 +60,7 @@ function App() {
       return;
     }
 
-    const API = `http://localhost:8080/books/${bookObj._id}`;
+    const API = `${API_URL}/books/${bookObj._id}`;
     const res = await axios.delete(API);
     if (res.data.deletedCount === 1) {
       getAllBooks();
